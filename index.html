@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="">
+    <title>Mapa Interactivo</title></title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- mapbox -->
+    <script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.css' rel='stylesheet' />
+    
+    <!-- Custom styles -->
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse my-shadow-top" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Mapa Interactivo</a>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <!--<a href="#">Link</a>-->
+            </li>
+            <li>
+              <!--<a href="#">Link</a>-->
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    
+    <!--Main Content -->
+    <div class="container-fluid">
+      <div class="row">
+        <!-- #map -->
+        <div class="col-xs-9" id="map"></div>
+        <!-- tools -->
+        <div class="col-xs-3 pull-right my-sidebar my-shadow-left">
+          <!-- nav tabs -->
+          <ul class="nav nav-tabs tools">
+            <li class="active"><a href="#buscar" data-toggle="tab">Buscar</a></li>
+            <li><a href="#capas" data-toggle="tab">Capas</a></li>
+            <li><a href="#herramientas" data-toggle="tab">Herramientas</a></li>
+          </ul>
+
+          <div class="tab-content">
+            <div class="tab-pane active" id="buscar">
+              <!-- buscar -->
+
+              <!-- País -->
+              <!-- <select class="form-control mybtn" id="pais">
+                <option>--</option>
+                <option>Puerto Rico</option>
+              </select> -->
+              
+              <!-- Municipio -->
+              <!-- <select class="form-control mybtn" id="municipio">
+                <option>--</option>
+                <option>Bayamón</option>
+              </select> -->
+
+              <!-- Invid -->
+              <h3 style="text-align: center;">Buscar por Invid</h3>
+              <div class="input-group mybtn">
+                <input type="text" class="form-control" name="invid" id="invid">
+                <span class="input-group-btn">
+                  <button class="btn btn-info" type="button" id="invid-search">Buscar</button>
+                </span>
+              </div>
+            </div>
+
+            <div class="tab-pane" id="capas">
+              <!-- capas -->
+            </div>
+            <div class="tab-pane" id="herramientas">
+              <!-- Herramientas -->
+            </div>
+          </div>
+
+        </div><!-- tools -->
+      </div><!-- .row -->
+    </div><!-- .container-fluid -->
+    
+    <nav class="navbar navbar-inverse navbar-fixed-bottom my-shadow-bottom" role="navigation">
+      <div class="container-fluid">
+        <div>
+          <p class="latlon" id='mousemove'></p>
+        </div> 
+      </div><!-- /.container-fluid -->
+    </nav>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- main app -->
+    <script src="js/app.js"></script>
+    <!-- test.js -->
+    <script src="js/test.js"></script>
+  </body>
+</html>

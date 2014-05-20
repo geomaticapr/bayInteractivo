@@ -1,0 +1,55 @@
+html,body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  margin-bottom: 0;
+  z-index: 100;
+  background-color: #444;
+  border-color: #666;
+  min-height: 40px;
+  border-radius: 0;
+}
+
+#map { 
+  position:absolute; 
+  top: 50px; 
+  bottom:40px; 
+  width:75%;
+  z-index: 1;
+}
+
+.latlon {
+  color: #aaa;
+  margin-top: 10px;
+}
+
+.tools {
+  margin-top: 10px;
+}
+
+.my-sidebar {
+  position: absolute;
+  top: 50px; 
+  bottom:40px;
+  right: 0;
+  width:25%;
+  z-index: 50;
+}
+
+.mybtn {
+  margin: 5px;
+}
+
+.my-shadow-top {
+  box-shadow: 0 3px 3px rgba(0,0,0,.25);
+}
+
+.my-shadow-bottom {
+  box-shadow: 0 -3px 3px rgba(0,0,0,.25);
+}
+
+.my-shadow-left {
+  box-shadow: -1px 0 3px rgba(0,0,0,.25);
+}
